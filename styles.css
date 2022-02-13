@@ -17,12 +17,13 @@ body {
 :root {
   --cyan: #26baa4;
   --light-blue: #6173ff;
-  --grayish-blue: #9fabb2;
-  --dark-grayish-blue: #4c545d;
+  --grayish-blue: #E5E7EB;
+  --dark-grayish-blue: #4B5259;
 }
 
 header .landing{
-    background: url(../images\bg-header-desktop.png);
+    background: url(../images\bg-header-desktop.png)
+     no-repeat center center/cover;
 }
   
 h1,
@@ -46,6 +47,11 @@ h3 {
   padding: 10vh 0;
   text-align: center;
 }
+
+h1{
+    font-weight: 600;
+    font-size: bold;
+}
   
 .paragraph {
   width: 40vw;
@@ -54,7 +60,7 @@ h3 {
   font-weight: 200;
 }
   
-#landing .logo-img {
+.landing .logo-img {
   width: 5rem;
 }
   
@@ -81,9 +87,9 @@ h3 {
 }
 
 .keep-track {
-    align-items: center;
+  align-items: center;
   width: 100%;
-  padding: 0;
+  padding-top: 3rem;
   margin: 0;
 }
   
@@ -93,6 +99,7 @@ h3 {
 }
 
 .track {
+  padding-top: 3rem;
   width: 100%;
   display: flex;
   flex-direction: row;
@@ -111,15 +118,18 @@ h3 {
 
 .inner-features h3 {
   color: var(--dark-grayish-blue);
-  font-weight: 400;
+  font-weight: 500;
+  text-align: left;
 }
   
 .inner-features p {
   font-weight: 200;
   width: 50vh;
+  padding-bottom: 2rem;
 }
 
 .access {
+  padding-top: 3rem;
   text-align: center;
 }
 
@@ -147,7 +157,7 @@ h3 {
 
 .workflow p {
   text-align: center;
-  color: var(--grayish-blue);
+  color: var(--dark-grayish-blue);
   font-size: 1rem;
   font-weight: 300;
 }
@@ -196,7 +206,7 @@ footer .footer-logo {
 
 footer .footer-links {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     gap: 2rem;
 }
 
